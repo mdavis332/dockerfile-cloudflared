@@ -14,7 +14,8 @@ RUN GOARCH=${GOARCH} GOARM=${GOARM} go build ./
 
 FROM multiarch/alpine:${ARCH}-edge
 
-LABEL maintainer="Jan Collijs"
+LABEL maintainer Michael Davis
+LABEL name "cloudflared"
 
 ENV DNS1 https://9.9.9.9/dns-query
 ENV DNS2 https://1.1.1.1/.well-known/dns-query
